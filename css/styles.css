@@ -1,0 +1,134 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800);
+*{
+    font-family: 'Montserrat';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 auto;
+    padding-bottom: 200px;
+}
+
+/* Tete de page */
+
+header.header{
+    display: flex;
+    align-items: center;
+}
+
+header.header img{
+    width: 150px;
+}
+
+section.top-page{
+    background: url('../img/bg.jpg');
+    background-size: cover;
+    height: 80vh;
+    padding: 25px;
+}
+
+/* Page de bienvenue */
+
+.landing-page{
+    position: relative;
+    padding: 20px 50px;
+}
+
+.big-title{
+    color: white;
+    font-size: 80px;
+    width: 70;
+}
+
+/* Menu de navigation */
+
+nav.nav{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 200px;
+    margin-left: 50px;
+}
+
+nav.nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+/*  Lectures */
+
+.section-title{
+    font-size: 50px;
+    position: relative;
+}
+
+.section-title::before{
+    content: "";
+    position: absolute;
+    background-color: #ff9900;
+    width: 50px;
+    height: 7px;
+    bottom: 0;
+}
+
+.lectures{
+    margin-left: auto;
+    margin-right: auto;
+    width: 51%;
+}
+
+.livres{
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lecture{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    min-width: 311px;
+    height: 512px;
+    border: solid #ff9900;
+    margin-left: 5px;
+    margin-top: 5px;
+
+}
+
+.livre1{
+    background-image: url(../img/livres/La-ferme-des-animaux.jpg);
+}
+
+.livre2{
+    background-image: url(../img/livres/Le-rouge-et-le-noir.jpg);
+}
+
+.livre3{
+    background-image: url(../img/livres/Bel-ami.jpg);
+}
+
+.livre-details{
+    position: absolute;
+    width: 90%;
+    bottom: 0;
+    background-color: #FFFFFFDF;
+    padding: 5px 20px;
+}
+
+.livre-name{
+    font-size: 22px;
+    font-weight: 600;
+    color: black;
+}
+
+.lectures li{
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+.livre-parties{
+    text-indent: 40px;
+}
